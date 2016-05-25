@@ -1,0 +1,17 @@
+{
+    "name": "express-formparse",
+    "version": "1.0.0",
+    "main": "./lib/middleware.js",
+    "author": {
+        "name": "Josef A Engman"
+    },
+    "dependencies": {
+        "formidable": "^1.0.17"
+    },
+    "keywords": [
+        "express",
+        "formidable",
+        "middleware"
+    ],
+    "license": "MIT"
+}
