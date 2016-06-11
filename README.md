@@ -36,6 +36,7 @@ app.use(formparse.parse({
 
 app.post('/upload', function (req, res) {
   // req.body will contain the parsed form
+  // req.files will contain file metadata
 });
 ```
 
