@@ -32,10 +32,6 @@ app.use(formparse.parse({
     keepExtensions: true,
     hash: 'md5',
     multiples: true,
-    matching: [
-        /^(?:\/api\/.+)/,
-        '/user/profile/picture'
-    ]
 }));
 
 app.post('/upload', function (req, res) {
@@ -46,7 +42,7 @@ app.post('/upload', function (req, res) {
 ```js
 formparse.parse([options])
 ```
-The keys and values in options will be directly passed to the formidable IncomingForm. (See [node-formidable API](https://github.com/felixge/node-formidable#api) for reference) Options may also contain one key 'matching' which is an array with either Strings or RegExps that has to match the incoming forms request path.
+The keys and values in options will be directly passed to the formidable IncomingForm. (See [node-formidable API](https://github.com/felixge/node-formidable#api) for reference).
 
 
 **Only requests having a `multipart/form-data` content-type will be parsed.**
