@@ -1,15 +1,15 @@
 {
   "name": "express-formparse7",
-  "version": "2.1.1",
-  "description": "An Express middleware that uses Formidable7 to parse incoming multi-part forms. Updated for Node 7",
-  "repository": "https://github.com/pornel/express-formparse",
+  "version": "2.1.2",
+  "description": "An Express middleware that uses Formidable to parse incoming multi-part forms. Updated for Node 7/8/9",
+  "repository": "https://github.com/kornelski/express-formparse",
   "main": "./lib/middleware.js",
   "author": [
     "Josef A Engman",
     "Kornel Lesiński"
   ],
   "dependencies": {
-    "formidable7": "^1.1.0"
+    "formidable": "^1.1.0"
   },
   "keywords": [
     "express",

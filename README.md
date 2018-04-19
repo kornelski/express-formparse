@@ -1,13 +1,13 @@
 # express-formparse7
 
-An [Express](http://expressjs.com) middleware that uses [Formidable7](https://github.com/pornel/node-formidable) to parse incoming multi-part forms.
+An [Express](http://expressjs.com) middleware that uses [Formidable](https://github.com/felixge/node-formidable) to parse incoming multi-part forms.
 
 ## What are Express, Formidable, and this?
 
 [Express](http://expressjs.com) is a fast, unopinionated, minimalist web
 framework for Node.js.
 
-[Formidable7](https://github.com/pornel/node-formidable) is a Node.js module
+[Formidable](https://github.com/felixge/node-formidable) is a Node.js module
 for parsing form data, especially file uploads.
 
 So, **`express-formparse`** is something like a bridge between them,
@@ -44,7 +44,7 @@ app.post('/upload', (req, res) => {
 ```js
 formparse.parse([options])
 ```
-The keys and values in options will be directly passed to the formidable IncomingForm. (See [node-formidable API](https://github.com/pornel/node-formidable#api) for reference).
+The keys and values in options will be directly passed to the formidable IncomingForm. (See [node-formidable API](https://github.com/felixge/node-formidable#api) for reference).
 
 
 **Only requests having a `multipart/form-data` content-type will be parsed.**
